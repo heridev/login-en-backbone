@@ -1,0 +1,27 @@
+.login-form-container
+  .login-form-container-inner
+    .notice-message{style: 'display:none'}
+      %span.icon
+      %ul
+        %li
+          %strong Please correct the next errors
+      #errors
+        %ul
+    .box-header
+      %h1.handwrited-head Bienvenido!
+      %p
+        %strong Identifiquese
+    .box-body
+      = form_tag(session_path) do
+        .input-line
+          = label_tag(:email, 'Email')
+          = text_field_tag :email
+        .input-line
+          = label_tag(:password, 'Password')
+          = password_field_tag :password
+        .button-line
+          = submit_tag "Log in", class: "btn-med"
+        %p.form-note
+          Did you forget your password?
+          = link_to "Reset it here", "#password-recovery", id: 'recover-password'
+
