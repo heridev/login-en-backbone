@@ -5,8 +5,17 @@ http://heridev.micompu.com.mx/backbone-on-rails/2-ejemplos-de-realizar-un-ajax-f
     $ git clone git@github.com:heridev/login-en-backbone.git
     $ cd login-en-backbone
     $ bundle install
+    $ rails generate rspec:install
     $ git add .
     $ git commit -m "Initialize git repository in local"
 
+Para correr las pruebas podemos utilizar be guard que todo el tiempo estara corriendo y cuando haya un cambio en las pruebas se vera reflejado
+
+    $ be guard start
+
+Para solo correr las pruebas en la carpeta spec o correr una prueba especifica
+
+    $ rspec spec
+    $ respec spec/controllers/sessions_ontroller_spec.rb
 
 Y eso es Todo!!!
