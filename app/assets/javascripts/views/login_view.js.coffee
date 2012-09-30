@@ -12,8 +12,6 @@ class Heridev.Views.LoginView extends Backbone.View
   login: (event) ->
     event.preventDefault()
 
-    console.log 'si entra'
- 
     $.ajax
       url: '/session/'
       type: 'post'
