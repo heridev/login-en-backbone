@@ -5,9 +5,6 @@ class SessionsController < ApplicationController
   end
 
   def create
-    puts "====================================================="
-    puts "si llego"
-    puts "====================================================="
     @errors= ["Error al momento de validarse",
               "Usuario erroneo",
               "password no es correcto"
