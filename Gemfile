@@ -7,10 +7,10 @@ gem 'rails', '3.2.6'
 
 gem 'sqlite3'
 gem 'haml'
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 2.2.0'
 
 group :assets do
-  gem 'backbone-on-rails'
+  gem 'backbone-on-rails', '>= 0.9.2.1'
   gem 'backbone-support'
   gem 'coffee-rails', '~> 3.2.1'
   gem 'eco'
